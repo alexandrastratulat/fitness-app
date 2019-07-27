@@ -6,7 +6,7 @@
 }
 
 .example-full-width {
-  width: 100%;
+  width: 50%;
 }
 
 .example-container {
@@ -30,3 +30,15 @@ input.example-right-align::-webkit-inner-spin-button {
 input.example-right-align {
   -moz-appearance: textfield;
 }
+
+.displayTableCell {
+  width: 500px;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 1px 1px 14px #ccc;
+  padding: 35px;
+  padding-bottom: 25px;
+}
+
+
+

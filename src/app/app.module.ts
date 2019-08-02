@@ -13,6 +13,7 @@ import { TabsModule } from 'ngx-bootstrap/tabs';
 import {MatListModule} from '@angular/material/list';
 import { FormularComponent } from './formular/formular/formular.component';
 import { MatButtonModule } from '@angular/material'
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,8 @@ import { MatButtonModule } from '@angular/material'
     TabsModule.forRoot(),
     MatListModule,
     MatButtonModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

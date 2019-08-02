@@ -1,8 +1,31 @@
 <div class="container">
-  <h2>Formular</h2>
+  <h2 class="titlu">Formular</h2>
+
+  <!-- Add last name -->
   <form class="example-form">
     <mat-form-field class="example-full-width">
-      <input matInput placeholder="Favorite food" value="Sushi">
+      <input matInput placeholder="Nume" value="">
     </mat-form-field>
+  </form>
+
+  <!-- Add first name -->
+    <form class="example-form">
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Prenume" value="">
+      </mat-form-field>
     </form>
+
+    <!-- Add tl. number -->
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Telephone number" type="number" name="phoneNo" required
+        oninput="if(value.length>10)value=value.slice(0,10)">
+    </mat-form-field>
+
+    <!-- Add mail -->
+    <div class="example-container">
+      <mat-form-field>
+        <input matInput placeholder="Enter your email" [formControl]="email" required>
+        <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+    </div>
 </div>

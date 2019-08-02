@@ -12,14 +12,16 @@ import { AbonamenteComponent } from './abonamente/abonamente/abonamente.componen
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import {MatListModule} from '@angular/material/list';
 import { FormularComponent } from './formular/formular/formular.component';
-import { MatButtonModule } from '@angular/material'
+import { MatButtonModule } from '@angular/material';
+import { PageNotFoundComponent } from './PageNotFound/page-not-found/page-not-found.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     LogComponent,
     AbonamenteComponent,
-    FormularComponent
+    FormularComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

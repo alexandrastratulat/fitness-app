@@ -8,11 +8,15 @@ import { LogComponent } from './login/log/log.component';
 import {MatInputModule} from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
+import { AbonamenteComponent } from './abonamente/abonamente/abonamente.component';
+import { TabsModule } from 'ngx-bootstrap/tabs';
+import {MatListModule} from '@angular/material/list';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LogComponent
+    LogComponent,
+    AbonamenteComponent,
   ],
   imports: [
     BrowserModule,
@@ -20,7 +24,9 @@ import { MatIconModule } from '@angular/material/icon';
     MatInputModule,
     MatFormFieldModule,
     MatIconModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    TabsModule.forRoot(),
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

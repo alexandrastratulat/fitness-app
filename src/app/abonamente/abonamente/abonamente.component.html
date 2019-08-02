@@ -1,0 +1,37 @@
+<!-- <div class="container">
+<div class="mb-3">
+  <pre class="card card-block card-header" *ngIf="value">Event select is fired. The heading of the selected tab is: {{value}}</pre>
+</div>
+<tabset>
+  <tab heading="Abonament copii" class="mt-2" (selectTab)="onSelect($event)">
+    <h4>Abonament copii ( <16 ) </h4>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+      when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      <mat-list role="list">
+          <mat-list-item role="listitem">Item 1</mat-list-item>
+          <mat-list-item role="listitem">Item 2</mat-list-item>
+          <mat-list-item role="listitem">Item 3</mat-list-item>
+        </mat-list>
+  </tab>
+  <tab heading="Abonament studenti" class="mt-2" (selectTab)="onSelect($event)">
+    <h4>Abonament student</h4>
+    <p>It has survived not only five centuries, but also the leap into electronic typesetting,
+      remaining essentially unchanged. It was popularised in the 1960s with the release of
+      Letraset sheets containing Lorem Ipsum passages</p>
+  </tab>
+</tabset>
+</div> -->
+<br> <br><br><br><br>
+<div class="abonamente">
+  <h2 class="titlu">Tipuri de abonamente</h2>
+  <br>
+  <mat-selection-list #abonament>
+    <mat-list-option *ngFor="let abonament of abonamente">
+      {{abonament}}
+    </mat-list-option>
+  </mat-selection-list>
+  <button mat-raised-button>Next</button>
+
+</div>
+

@@ -2,18 +2,21 @@
 .displayTableCell {
   width: 470px;
   margin: auto;
-  background-color: white;
   box-shadow: 10px 10px 10px 10px #ccc;
   padding: 35px;
   padding-bottom: 35px;
   padding-right: 35px;
   padding-left: 35px;
   text-align: center;
-  background:'https://www.google.com/search?q=abstract+gym+images&tbm=isch&tbs=rimg:CTQnrD8SgITZIjhyE3NXmP5zIt7nL_1C_1splysd5N18cpeKJGAa6sUpFH7lmdstif4HWdSuWD-cP45sm445thY1zuHCoSCXITc1eY_1nMiEbUN9uJ-sY7RKhIJ3ucv8L-ymXIRTU1VGhHMZbEqEgmx3k3Xxyl4ohGpxdZ7P3XxASoSCUYBrqxSkUfuERoPt7CEid5nKhIJWZ2y2J_1gdZ0R0WQYTYRG9gIqEglK5YP5w_1jmyRH_1H7mVYqWHnioSCbjjm2FjXO4cEcWUfl3K_1wOG&tbo=u&sa=X&ved=2ahUKEwjS1LyXxdrjAhXJCuwKHTV_BAMQ9C96BAgBEBs&biw=1536&bih=754&dpr=1.25#imgdii=sMGSBxgVGHwjrM:&imgrc=uOObYWNc7hyvwM:'
+  background-image: url="https://www.shutterstock.com/image-vector/vector-logo-design-fitness-club-605664122"
 }
 
 .authBlock{
   padding: 20px;
   text-align: center;
+}
+
+.example-full-width {
+  width: 75%;
 }
 

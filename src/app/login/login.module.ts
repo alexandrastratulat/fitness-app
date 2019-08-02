@@ -10,7 +10,6 @@ import {MatIconModule} from '@angular/material/icon';
     MatInputModule,
     MatFormFieldModule,
     MatIconModule,
-
   ]
 })
 export class LoginModule { }

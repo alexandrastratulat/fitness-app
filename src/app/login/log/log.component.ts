@@ -6,9 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./log.component.css']
 })
 export class LogComponent implements OnInit {
-
   hide = true;
-
   constructor() { }
 
   ngOnInit() {

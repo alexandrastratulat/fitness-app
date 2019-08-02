@@ -11,12 +11,15 @@ import { MatIconModule } from '@angular/material/icon';
 import { AbonamenteComponent } from './abonamente/abonamente/abonamente.component';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import {MatListModule} from '@angular/material/list';
+import { FormularComponent } from './formular/formular/formular.component';
+import { MatButtonModule } from '@angular/material'
 
 @NgModule({
   declarations: [
     AppComponent,
     LogComponent,
     AbonamenteComponent,
+    FormularComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +29,8 @@ import {MatListModule} from '@angular/material/list';
     MatIconModule,
     BrowserAnimationsModule,
     TabsModule.forRoot(),
-    MatListModule
+    MatListModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

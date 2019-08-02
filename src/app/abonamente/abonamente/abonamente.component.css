@@ -6,3 +6,8 @@
 .titlu{
   text-align: center;
 }
+
+.next{
+  margin-left: 85%;
+  display: block;
+}

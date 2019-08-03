@@ -10,11 +10,11 @@
       <div class="authBlock">
           <div class="formGroup">
             <mat-form-field class="example-full-width">
-                <input matInput type="text" class="formControl" placeholder="Username" #userName required>
+                <input matInput type="text" class="formControl" placeholder="Username" [(ngModel)]="username" required>
               </mat-form-field>
               <br>
               <mat-form-field class="example-full-width">
-                <input matInput placeholder="Password" [type]="hide ? 'password' : 'text'" #userPassword required >
+                <input matInput placeholder="Password" [type]="hide ? 'password' : 'text'" [(ngModel)]="password" required >
                 <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
                   [attr.aria-pressed]="hide">
                   <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>

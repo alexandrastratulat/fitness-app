@@ -1,17 +1,5 @@
 
-.displayTableCell {
-  width: 470px;
-  margin: auto;
-  box-shadow: 10px 10px 10px 10px #ccc;
-  padding: 35px;
-  padding-bottom: 35px;
-  padding-right: 35px;
-  padding-left: 35px;
-  text-align: center;
-  background-image: url="https://www.shutterstock.com/image-vector/vector-logo-design-fitness-club-605664122"
-}
-
-.authBlock{
+ .authBlock{
   padding: 20px;
   text-align: center;
 }
@@ -19,4 +7,18 @@
 .example-full-width {
   width: 75%;
 }
+
+.cardLogin {
+  width: 30vw;
+  height: 40vh;
+  margin: 20vmin auto;
+  text-align: center;
+  padding: 20px;
+  font-size: 35px;
+} 
+
+
+
+
+
 

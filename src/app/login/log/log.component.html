@@ -1,20 +1,31 @@
-<br><br><br><br><br>
 
-<div class="displayTableCell">
-  <h2>LogIn</h2>
-  <div class="authBlock">
-    <div class="formGroup">
-      <mat-form-field class="example-full-width">
-          <input matInput type="text" class="formControl" placeholder="Id" #userName required>
-        </mat-form-field>
-        <br>
-        <mat-form-field class="example-full-width">
-          <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'" #userPassword required >
-          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
-            [attr.aria-pressed]="hide">
-            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-          </button>
-        </mat-form-field>
-        </div>
-      </div>
-</div>
+<mat-card class="cardLogin">
+  <mat-card-header>
+    <mat-card-title class="titluCard">
+     <mat-icon>person</mat-icon>
+      Login
+    </mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+      <div class="authBlock">
+          <div class="formGroup">
+            <mat-form-field class="example-full-width">
+                <input matInput type="text" class="formControl" placeholder="Username" #userName required>
+              </mat-form-field>
+              <br>
+              <mat-form-field class="example-full-width">
+                <input matInput placeholder="Password" [type]="hide ? 'password' : 'text'" #userPassword required >
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                  [attr.aria-pressed]="hide">
+                  <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+              </mat-form-field>
+              </div>
+            </div>
+    <!-- <mat-progress-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-progress-spinner> -->
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button (click)="login()" color="primary">Login</button>
+  </mat-card-actions>
+</mat-card>
+

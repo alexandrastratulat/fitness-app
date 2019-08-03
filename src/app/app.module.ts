@@ -13,7 +13,12 @@ import { TabsModule } from 'ngx-bootstrap/tabs';
 import {MatListModule} from '@angular/material/list';
 import { FormularComponent } from './formular/formular/formular.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import { MatButtonModule } from '@angular/material';
+import { MatButtonModule, MatToolbarModule,
+  MatCardModule,
+  MatDialogModule,
+  MatTableModule,
+  MatMenuModule,
+  MatProgressSpinnerModule } from '@angular/material';
 import { PageNotFoundComponent } from './PageNotFound/page-not-found/page-not-found.component'
 
 @NgModule({
@@ -35,9 +40,16 @@ import { PageNotFoundComponent } from './PageNotFound/page-not-found/page-not-fo
     MatListModule,
     MatButtonModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+  MatToolbarModule,
+  MatCardModule,
+  MatDialogModule,
+  MatTableModule,
+  MatMenuModule,
+  MatProgressSpinnerModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [LogComponent]
 })
 export class AppModule { }

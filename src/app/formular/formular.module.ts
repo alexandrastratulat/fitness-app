@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormularComponent } from './formular/formular.component';
 import {MatInputModule} from '@angular/material/input';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {MatDatepickerModule} from '@angular/material/datepicker';
 
 @NgModule({
   declarations: [FormularComponent],
@@ -10,7 +11,9 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     CommonModule,
     MatInputModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatDatepickerModule,
+
   ]
 })
 export class FormularModule { }

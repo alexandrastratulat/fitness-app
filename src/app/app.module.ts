@@ -20,6 +20,7 @@ import { MatButtonModule, MatToolbarModule,
   MatMenuModule,
   MatProgressSpinnerModule } from '@angular/material';
 import { PageNotFoundComponent } from './PageNotFound/page-not-found/page-not-found.component'
+import {MatDatepickerModule, MatNativeDateModule} from '@angular/material/';
 
 @NgModule({
   declarations: [
@@ -46,8 +47,10 @@ import { PageNotFoundComponent } from './PageNotFound/page-not-found/page-not-fo
   MatTableModule,
   MatMenuModule,
   MatProgressSpinnerModule,
+  MatDatepickerModule,
+  MatNativeDateModule
   ],
-  providers: [],
+  providers: [MatDatepickerModule],
   bootstrap: [AppComponent],
   entryComponents: [LogComponent]
 })

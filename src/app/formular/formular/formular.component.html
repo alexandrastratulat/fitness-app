@@ -1,19 +1,27 @@
+<br><br><br>
 <div class="container">
   <h2 class="titlu">Formular</h2>
-
-  <!-- Add last name -->
+<br>
+  <!-- Add first name -->
   <form class="example-form">
     <mat-form-field class="example-full-width">
-      <input matInput placeholder="Nume" value="">
+      <input matInput placeholder="First name" value="">
     </mat-form-field>
   </form>
 
-  <!-- Add first name -->
+  <!-- Add last name -->
     <form class="example-form">
       <mat-form-field class="example-full-width">
-        <input matInput placeholder="Prenume" value="">
+        <input matInput placeholder="Last name" value="">
       </mat-form-field>
     </form>
+
+    <!-- Add date of birth -->
+    <mat-form-field>
+        <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
 
     <!-- Add tl. number -->
     <mat-form-field class="example-full-width">
@@ -24,8 +32,23 @@
     <!-- Add mail -->
     <div class="example-container">
       <mat-form-field>
-        <input matInput placeholder="Enter your email" [formControl]="email" required>
+        <input matInput placeholder="Email" [formControl]="email" required>
         <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
       </mat-form-field>
     </div>
+
+    <!-- Add address -->
+    <form class="example-form">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Address" value="">
+        </mat-form-field>
+    </form>
+
+    <!-- Add CNP -->
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="CNP" type="number" name="CNP" required
+        oninput="if(value.length>13)value=value.slice(0,13)">
+    </mat-form-field>
+
+    <button mat-raised-button color="primary">Add client</button>
 </div>

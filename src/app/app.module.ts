@@ -41,12 +41,11 @@ import { PageNotFoundComponent } from './PageNotFound/page-not-found/page-not-fo
     MatButtonModule,
     FormsModule,
     ReactiveFormsModule,
-  MatToolbarModule,
   MatCardModule,
   MatDialogModule,
   MatTableModule,
   MatMenuModule,
-  MatProgressSpinnerModule
+  MatProgressSpinnerModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

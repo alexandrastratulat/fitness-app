@@ -2,11 +2,17 @@
 <div class="abonamente">
   <h2 class="titlu">Tipuri de abonamente</h2>
   <br><br>
-  <mat-selection-list #abonament>
+  <!-- <mat-selection-list #abonament>
     <mat-list-option *ngFor="let abonament of abonamente">
       {{abonament}}
     </mat-list-option>
-  </mat-selection-list>
+  </mat-selection-list> -->
+  <mat-tab-group mat-align-tabs="center">
+    <mat-tab label="First">Content 1</mat-tab>
+    <mat-tab label="Second">Content 2</mat-tab>
+    <mat-tab label="Third">Content 3</mat-tab>
+  </mat-tab-group>
+
   <br>
   <button mat-raised-button class="next">Next</button>
 

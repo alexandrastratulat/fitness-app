@@ -4,6 +4,7 @@ import { FormularComponent } from './formular/formular.component';
 import {MatInputModule} from '@angular/material/input';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatIconModule } from '@angular/material';
 
 @NgModule({
   declarations: [FormularComponent],
@@ -13,6 +14,7 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
     FormsModule,
     ReactiveFormsModule,
     MatDatepickerModule,
+    MatIconModule
 
   ]
 })

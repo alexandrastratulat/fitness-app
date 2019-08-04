@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, Validators} from '@angular/forms';
-
+import {Router} from '@angular/router';
 @Component({
   selector: 'app-formular',
   templateUrl: './formular.component.html',
@@ -16,9 +16,12 @@ export class FormularComponent implements OnInit {
             '';
   }
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
+  back() : void{
+    this.router.navigate(['abonamente']);
+  }
 }

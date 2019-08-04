@@ -1,5 +1,5 @@
 .abonamente{
-  width: 700px;
+  width: 900px;
   margin: auto;
 }
 
@@ -21,3 +21,7 @@
 .example-delete-tab-button {
   margin: 8px;
 }
+/*
+.icon{
+  display: block;
+} */

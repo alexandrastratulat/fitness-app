@@ -13,7 +13,7 @@ import { TabsModule } from 'ngx-bootstrap/tabs';
 import {MatListModule} from '@angular/material/list';
 import { FormularComponent } from './formular/formular/formular.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import { MatButtonModule, MatToolbarModule,
+import { MatButtonModule,
   MatCardModule,
   MatDialogModule,
   MatTableModule,
@@ -50,7 +50,8 @@ import {MatTabsModule} from '@angular/material/tabs';
   MatProgressSpinnerModule,
   MatDatepickerModule,
   MatNativeDateModule,
-  MatTableModule
+  MatTableModule,
+  MatTabsModule,
   ],
   providers: [MatDatepickerModule],
   bootstrap: [AppComponent],

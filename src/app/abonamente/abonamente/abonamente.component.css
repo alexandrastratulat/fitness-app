@@ -21,7 +21,6 @@
 .example-delete-tab-button {
   margin: 8px;
 }
-/*
-.icon{
-  display: block;
-} */
+.logout{
+  margin-left: 100%;
+}

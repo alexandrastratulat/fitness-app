@@ -1,6 +1,6 @@
 
  .authBlock{
-  padding: 20px;
+  padding: 10px;
   text-align: center;
 }
 
@@ -8,16 +8,19 @@
   width: 75%;
 }
 
-.cardLogin {
+.container {
   width: 30vw;
   height: 40vh;
   margin: 20vmin auto;
   text-align: center;
   padding: 20px;
   font-size: 35px;
-} 
+}
 
-
+.login{
+padding: 70px;
+  background-image: url("src\assets\images\login.jpg");
+}
 
 
 

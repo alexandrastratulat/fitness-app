@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TabDirective } from 'ngx-bootstrap/tabs';
 import {FormControl} from '@angular/forms';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-abonamente',
@@ -26,9 +27,17 @@ export class AbonamenteComponent implements OnInit {
   removeTab(index: number) {
     this.tabs.splice(index, 1);
   }
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  logOut() : void{
+    this.router.navigate(['login']);
+  }
+
+  next() : void{
+    this.router.navigate(['formular']);
   }
 
     // abonamente: string[] = ['copii', 'student', 'happy-hour', 'cardio', 'full(piscina + sauna)'];

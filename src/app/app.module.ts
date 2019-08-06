@@ -21,7 +21,12 @@ import { MatButtonModule,
   MatProgressSpinnerModule } from '@angular/material';
 import { PageNotFoundComponent } from './PageNotFound/page-not-found/page-not-found.component'
 import {MatDatepickerModule, MatNativeDateModule} from '@angular/material/';
-import {MatTabsModule} from '@angular/material/tabs';
+import { FullComponent } from './abonamente/full/full.component';
+import { CopiiComponent } from './abonamente/copii/copii.component';
+import { CardioComponent } from './abonamente/cardio/cardio.component';
+import { HappyHourComponent } from './abonamente/happy-hour/happy-hour.component';
+import { StudentComponent } from './abonamente/student/student.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
@@ -29,7 +34,12 @@ import {MatTabsModule} from '@angular/material/tabs';
     LogComponent,
     AbonamenteComponent,
     FormularComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    FullComponent,
+    CopiiComponent,
+    CardioComponent,
+    HappyHourComponent,
+    StudentComponent
   ],
   imports: [
     BrowserModule,
@@ -51,13 +61,14 @@ import {MatTabsModule} from '@angular/material/tabs';
   MatDatepickerModule,
   MatNativeDateModule,
   MatTableModule,
-  MatTabsModule,
+  MatToolbarModule
   ],
   providers: [MatDatepickerModule],
   bootstrap: [AppComponent],
   entryComponents: [LogComponent],
-  schemas: [
-    CUSTOM_ELEMENTS_SCHEMA
-  ],
+
+  // schemas: [
+  //   CUSTOM_ELEMENTS_SCHEMA
+  // ],
 })
 export class AppModule { }

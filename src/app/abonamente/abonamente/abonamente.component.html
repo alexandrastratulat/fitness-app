@@ -4,44 +4,52 @@
     <button mat-raised-button (click)="logOut()" color="primary">Logout</button>
 </div>
 <br> <br><br>
+
 <div class="abonamente">
   <br><br>
   <h2 class="titlu">Tipuri de abonamente</h2>
   <br><br>
-  <!-- <mat-selection-list #abonament>
-    <mat-list-option *ngFor="let abonament of abonamente">
-      {{abonament}}
-    </mat-list-option>
-  </mat-selection-list> -->
-  <div>
+
+  <!-- <div>
     <span class="example-input-label"> Selected tab index: </span>
     <mat-form-field>
       <input matInput type="number" [formControl]="selected">
     </mat-form-field>
-  </div>
+  </div> -->
 
-  <div>
+  <!-- <div>
     <button mat-raised-button
             class="example-add-tab-button"
             (click)="addTab(selectAfterAdding.checked)">
       Add new tab
     </button>
     <mat-checkbox #selectAfterAdding> Select tab after adding </mat-checkbox>
-  </div>
+  </div> -->
 
-  <mat-tab-group [selectedIndex]="selected.value"
-                 (selectedIndexChange)="selected.setValue($event)">
-    <mat-tab *ngFor="let tab of tabs; let index = index" [label]="tab">
-      Contents for {{tab}}
+  <nav mat-tab-nav-bar >
+    <a mat-tab-link *ngFor="let link of navLinks" [routerLink]="link.path"
+    routerLinkActive #rla="routerLinkActive" [routerLinkActiveOptions]="{exact:true}" [active]="rla.isActive">
+      {{link.label}}
 
-      <button mat-raised-button
+      <!-- <button mat-raised-button
               class="example-delete-tab-button"
               [disabled]="tabs.length === 1"
               (click)="removeTab(index)">
         Delete Tab
-      </button>
-    </mat-tab>
-  </mat-tab-group>
+      </button> -->
+    </a>
+  </nav>
+
+  <!-- <nav mat-tab-nav-bar>
+    <a mat-tab-link
+    *ngFor="let link of navLinks"
+    [routerLink]="link.link"
+    routerLinkActive #rla="routerLinkActive"
+    [active]="rla.isActive">
+
+    </a>
+    </nav> -->
+
   <br>
   <button mat-raised-button class="next" (click)="next()" color="primary">Next</button>
 

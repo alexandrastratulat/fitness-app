@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-full',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FullComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
+  logOut() : void{
+    this.router.navigate(['login']);
+  }
+
+  back() : void{
+    this.router.navigate(['abonamente']);
+  }
 }

@@ -27,6 +27,8 @@ import { CardioComponent } from './abonamente/cardio/cardio.component';
 import { HappyHourComponent } from './abonamente/happy-hour/happy-hour.component';
 import { StudentComponent } from './abonamente/student/student.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatTabsModule} from '@angular/material/tabs';
+
 
 @NgModule({
   declarations: [
@@ -60,8 +62,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
   MatProgressSpinnerModule,
   MatDatepickerModule,
   MatNativeDateModule,
-  MatTableModule,
-  MatToolbarModule
+  MatToolbarModule,
+  MatTabsModule
   ],
   providers: [MatDatepickerModule],
   bootstrap: [AppComponent],

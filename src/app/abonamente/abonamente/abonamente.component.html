@@ -10,48 +10,33 @@
   <h2 class="titlu">Tipuri de abonamente</h2>
   <br><br>
 
-  <!-- <div>
-    <span class="example-input-label"> Selected tab index: </span>
-    <mat-form-field>
-      <input matInput type="number" [formControl]="selected">
-    </mat-form-field>
-  </div> -->
 
-  <!-- <div>
-    <button mat-raised-button
-            class="example-add-tab-button"
-            (click)="addTab(selectAfterAdding.checked)">
-      Add new tab
-    </button>
-    <mat-checkbox #selectAfterAdding> Select tab after adding </mat-checkbox>
-  </div> -->
+  <mat-tab-group>
+  <mat-tab label="Copii"> Abonament pentru copii intre 10-15 ani.
+    Pret: 70 lei/luna
+    <button mat-stroked-button (click)="copii()">Add</button>
+  </mat-tab>
 
-  <nav mat-tab-nav-bar >
-    <a mat-tab-link *ngFor="let link of navLinks" [routerLink]="link.path"
-    routerLinkActive #rla="routerLinkActive" [routerLinkActiveOptions]="{exact:true}" [active]="rla.isActive">
-      {{link.label}}
+  <mat-tab label="Student"> Abonament pentru studenti. Abonament pe baza de legitimatie.
+    Pret: 80 lei/luna
+    <button mat-stroked-button (click)="student()">Add</button>
+   </mat-tab>
 
-      <!-- <button mat-raised-button
-              class="example-delete-tab-button"
-              [disabled]="tabs.length === 1"
-              (click)="removeTab(index)">
-        Delete Tab
-      </button> -->
-    </a>
-  </nav>
+  <mat-tab label="Happy-hour"> Abonament pentru orice persoana. Aconament valabil in fiecare zi intre orele 10:00-15:00.
+    Pret: 80 lei/luna
+    <button mat-stroked-button (click)="happy()">Add</button>
+  </mat-tab>
 
-  <!-- <nav mat-tab-nav-bar>
-    <a mat-tab-link
-    *ngFor="let link of navLinks"
-    [routerLink]="link.link"
-    routerLinkActive #rla="routerLinkActive"
-    [active]="rla.isActive">
+  <mat-tab label="Cardio"> Abonament pentru orice persoana. Acesul este doar pentru aparatele de cardio.
+    Pret: 50 lei/luna
+    <button mat-stroked-button (click)="cardio()">Add</button>
+  </mat-tab>
 
-    </a>
-    </nav> -->
-
-  <br>
-  <button mat-raised-button class="next" (click)="next()" color="primary">Next</button>
+  <mat-tab label="Full"> Abonament full. Acces la toate aparatele + sauna la orice ora din program.
+    Pret: 100 lei/luna
+    <button mat-stroked-button (click)="full()">Add</button>
+  </mat-tab>
+</mat-tab-group>
 
 </div>
 

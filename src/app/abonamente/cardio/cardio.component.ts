@@ -10,9 +10,9 @@ export interface PeriodicElement {
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, name: 'Alex', email: 'alex@mail.com', validity: '03/03/2019'},
-  {position: 2, name: 'Marius', email: 'marius@mail.com', symbol: 'He'},
-  {position: 3, name: 'Ioana', email: 'ioana@mail.com', symbol: 'Li'},
+  // {position: 1, name: 'Alex', email: 'alex@mail.com', validity: '03/03/2019'},
+  // {position: 2, name: 'Marius', email: 'marius@mail.com', symbol: 'He'},
+  // {position: 3, name: 'Ioana', email: 'ioana@mail.com', symbol: 'Li'},
 ];
 
 @Component({

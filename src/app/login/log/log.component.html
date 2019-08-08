@@ -1,32 +1,36 @@
-<div class="login">
-<mat-card class="container">
-  <mat-card-header>
-    <mat-card-title class="titluCard">
-     <mat-icon>person</mat-icon>
-      Login
-    </mat-card-title>
-  </mat-card-header>
-  <mat-card-content>
-      <div class="authBlock">
-          <div class="formGroup">
-            <mat-form-field class="example-full-width">
-                <input matInput type="text" class="formControl" placeholder="Username" [(ngModel)]="username" required>
-              </mat-form-field>
-              <br>
-              <mat-form-field class="example-full-width">
-                <input matInput placeholder="Password" [type]="hide ? 'password' : 'text'" (keyup.enter)="login()" [(ngModel)]="password" required >
-                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
-                  [attr.aria-pressed]="hide">
-                  <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-                </button>
-              </mat-form-field>
-              </div>
-            </div>
-    <!-- <mat-progress-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-progress-spinner> -->
-  </mat-card-content>
-  <mat-card-actions>
-    <button mat-raised-button (click)="login()" color="primary">Login</button>
-  </mat-card-actions>
-</mat-card>
 
+<div class="bg">
+  <div class="login">
+    <mat-card class="container">
+      <mat-card-header>
+        <mat-card-title class="titluCard">
+         <mat-icon>person</mat-icon>
+          Login
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+          <div class="authBlock">
+              <div class="formGroup">
+                <mat-form-field class="example-full-width">
+                    <input matInput type="text" class="formControl" placeholder="Username" [(ngModel)]="username" required>
+                  </mat-form-field>
+                  <br>
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Password" [type]="hide ? 'password' : 'text'" (keyup.enter)="login()" [(ngModel)]="password" required >
+                    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                      [attr.aria-pressed]="hide">
+                      <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
+                  </mat-form-field>
+                  </div>
+                </div>
+        <!-- <mat-progress-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-progress-spinner> -->
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button (click)="login()" color="primary">Login</button>
+      </mat-card-actions>
+    </mat-card>
+
+    </div>
+  <img src="assets/images/login1.jpg">
 </div>

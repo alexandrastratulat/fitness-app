@@ -10,7 +10,7 @@ import { CardioComponent } from './cardio/cardio.component';
 import { FullComponent } from './full/full.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { RouterModule } from '@angular/router';
-import { MatFormFieldModule, MatIconModule } from '@angular/material';
+import { MatFormFieldModule, MatIconModule, MatTableModule } from '@angular/material';
 
 @NgModule({
   declarations: [CopiiComponent, StudentComponent, HappyHourComponent, CardioComponent, FullComponent],
@@ -22,7 +22,8 @@ import { MatFormFieldModule, MatIconModule } from '@angular/material';
     MatToolbarModule,
     [RouterModule],
     MatFormFieldModule,
-    MatIconModule
+    MatIconModule,
+    MatTableModule,
 
   ],
   // schemas: [
